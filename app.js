@@ -13,6 +13,15 @@ mongoose.connect(process.env.MONGODB_URI);
 
 var app = express();
 
+// Connect to Database
+mongoose.connect('mongodb://localhost/Foodie-Roadmap')
+  .then(() => {
+    console.log('connected to mongoDB')
+  })
+  .catch((err) => {
+    console.log('ERROR', err)
+  })
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
