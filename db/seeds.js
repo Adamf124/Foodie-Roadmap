@@ -22,4 +22,7 @@ user.remove()
       email_address: 'xa@thismail.com',
       userID: number
     })
+    const users = [ user1, user2, user3, user4 ]
+      // <--- save test data --->
+      return user.insertMany(users)
   })
