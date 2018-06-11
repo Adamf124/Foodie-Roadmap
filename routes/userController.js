@@ -14,7 +14,10 @@ router.get('/', (req, res, next) => {
       res.render('user/index', { listAllusers: listAllusers })
     })
     .catch((err) => res.send(err))
-
+// NEW Route
+router.get('/new', (req, res) => {
+  res.render('user/new')
+})
 });
 
 module.exports = router;
