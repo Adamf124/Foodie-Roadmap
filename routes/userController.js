@@ -7,11 +7,11 @@ const User = require('../models/Users')
 router.get('/', (req, res, next) => {
 
   // Find all users
-  user.find()
+  User.find()
   // then render out all data that match the user model.
     .then((listAllusers) => {
 
-      res.render('user/index', { listAllusers: listAllusers })
+      res.render('users/index', { listAllusers: listAllusers })
     })
     .catch((err) => res.send(err))
 });
