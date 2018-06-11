@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const Homework = require('../models/User')
 
 /* GET users listing. */
 // localhost/user
