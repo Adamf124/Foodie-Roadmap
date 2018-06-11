@@ -16,7 +16,9 @@ var app = express();
 // Connect to Database
 mongoose.connect('mongodb://localhost/Foodie-Roadmap')
   .then(() => {
+    console.log('======================')
     console.log('connected to mongoDB')
+    console.log('======================')
   })
   .catch((err) => {
     console.log('ERROR', err)
