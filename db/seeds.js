@@ -22,6 +22,12 @@ mongoose.connect('mongodb://localhost/Foodie-Roadmap')
       email_address: 'xa@thismail.com',
       userID: 1
     })
+    const user2 = new user({
+      name: 'Sean Connery',
+      address: '123 this st., Atlanta, GA ',
+      email_address: 'sc@thismail.com',
+      userID: 2
+    })
     const users = [ user1, user2, user3, user4 ]
       // <--- save test data --->
       return user.insertMany(users)
