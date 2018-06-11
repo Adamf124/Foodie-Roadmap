@@ -17,7 +17,7 @@ router.get('/', (req, res, next) => {
 });
 // NEW Route
 router.get('/new', (req, res) => {
-  res.render('user/new')
+  res.render('users/new')
 })
 
 // CREATE Route
@@ -25,8 +25,14 @@ router.post('/', (req, res) => {
   const newUser = req.body
   User.create(newUser)
     .then(() => {
-      res.redirect('/user')
+      res.redirect('/users')
     })
 })
-
+// SHOW Route
+router.get('/:id', (req, res) => {
+  User.findById(req.params.id)
+    .then((individualUser) => {
+      res.render('users/show', { individualUser })
+    })
+})
 module.exports = router;
