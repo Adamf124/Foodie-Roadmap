@@ -6,13 +6,13 @@ const Schema = require("./schema.js");
 /// Connect to Database
 mongoose.connect('mongodb://localhost/Foodie-Roadmap')
   .then(() => {
-    console.log('connected to mongoDB')
+      console.log('connected to mongoDB')
   })
   .catch((err) => {
-    console.log('ERROR', err)
+      console.log('ERROR', err)
   })
-// <--- Remove old user Data --->
-user.remove()
+    // <--- Remove old user Data --->
+    user.remove()
   .then(() => {
 
     // <--- create new test user data --->
@@ -20,9 +20,13 @@ user.remove()
       name: 'Xavier',
       address: '123 this st., Atlanta, GA ',
       email_address: 'xa@thismail.com',
-      userID: number
+      userID: 1
     })
     const users = [ user1, user2, user3, user4 ]
       // <--- save test data --->
       return user.insertMany(users)
-  })
+    .then(() => {
+        // <--- close the database --->
+        mongoose.connection.close()
+    })
+})
