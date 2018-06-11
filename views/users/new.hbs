@@ -1,0 +1,38 @@
+<h1>Create New User</h1>
+
+<form action="/user" method="POST">
+{{!-- ========= Name ============ --}}
+  <div>
+    <label for="name"> Name</label>
+    <input type="text" name="name" placeholder="Enter your name" />
+  </div>
+{{!-- ========================== --}}
+
+{{!-- ========= Username =========== --}}
+  <div>
+    <label for="username">Username</label>
+    <textarea 
+    type="text" 
+    name="username" 
+    placeholder="Enter Username"></textarea>
+  </div>
+{{!-- ========================== --}}
+
+{{!-- ========= Address =========== --}}
+  <div>
+    <label for="address">Address</label>
+    <input type="text" name="address" placeholder="Enter your Adress " />
+  </div>
+{{!-- ========================== --}}
+
+  {{!-- ========================== --}}
+  <div>
+    <label for="email_address">Email Address</label>
+    <input type="text" name="email_address" placeholder="Enter your email address" />
+  </div>
+{{!-- ========================== --}}
+
+
+
+  <button type="submit">Submit</button>
+</form>
