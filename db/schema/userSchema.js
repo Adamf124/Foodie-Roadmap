@@ -7,8 +7,7 @@ const userSchema = new Schema({
     email_address: {
         type: String,
         required: true
-    },
-    userID: Number
+    }
 })
 
 module.exports = userSchema

@@ -20,15 +20,13 @@ mongoose.connect('mongodb://localhost/Foodie-Roadmap')
       name: 'Xavier',
       username: 'thecoolest1',
       address: '123 this st., Atlanta, GA ',
-      email_address: 'xa@thismail.com',
-      userID: 1
+      email_address: 'xa@thismail.com'
     })
     const user2 = new user({
       name: 'Sean Connery',
       username: 'theReal007',
       address: '123 this st., Atlanta, GA ',
-      email_address: 'sc@thismail.com',
-      userID: 2
+      email_address: 'sc@thismail.com'
     })
     const users = [ user1, user2, ]
       // <--- save test data --->
