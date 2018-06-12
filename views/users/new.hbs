@@ -1,4 +1,7 @@
+<video id="bgvid" playsinline autoplay loop src="../images/blurred_market.mp4" alt=""></video>
+
 <h1>Create New User</h1>
+<div id="newuser">
 
 <form action="/users" method="POST">
 {{!-- ========= Name ============ --}}
@@ -11,10 +14,10 @@
 {{!-- ========= Username =========== --}}
   <div>
     <label for="username">Username</label>
-    <textarea 
+    <input
     type="text" 
     name="username" 
-    placeholder="Enter Username"></textarea>
+    placeholder="Enter Username"></input>
   </div>
 {{!-- ========================== --}}
 
@@ -36,3 +39,4 @@
 
   <button type="submit">Submit</button>
 </form>
+</div>
