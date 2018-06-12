@@ -33,6 +33,14 @@ router.get('/:id', (req, res) => {
   User.findById(req.params.id)
     .then((individualUser) => {
       res.render('users/show', { individualUser })
+      console.log(individualUser)
+    })
+})
+// EDIT Route
+router.get('/:id/edit', (req, res) => {
+  User.findById(req.params.id)
+    .then((doThis) => {
+      res.render('users/edit', { individualUser: doThis })
     })
 })
 module.exports = router;
