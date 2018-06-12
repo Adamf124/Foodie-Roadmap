@@ -8,14 +8,30 @@ body {
   text-align: center;
 }
 #title {
-  font-family: Futwora Regular,sans-serif;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2em;
   letter-spacing: 4px;
   font-weight: 100;
   position: absolute;
+  top:40%;
+  left: 26%;
   color: gold;
   padding: 0px;
-  border: solid pink
+  border-bottom: solid white 1px;
+}
+#subtitle {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  letter-spacing: 4px;
+  font-weight: 100;
+  position: absolute;
+  top:50%;
+  left: 28%;
+  color: gold;
+  padding: 0px;
+  /* border: solid pink */
 }
 a {
   color: #00B7FF;
