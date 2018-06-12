@@ -58,3 +58,26 @@ video#bgvid {
   left: 45%;
   padding: 5px;
 }
+input[type=text],input[type=username]{
+  width: 200px;
+  padding: 15px;
+  margin: 10px 0 20px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+#newuser{
+  color: gold;
+  font-size: 1.5em;
+  padding: 15px;
+  left: 35%;
+  position: absolute;
+  width: 400px;
+  height: auto;
+  /* border: solid 2px; */
+  align-content: center;
+  background-color: rgba(0, 0, 0, .2)
+}
+#newuser button{
+  width: 100%
+}
