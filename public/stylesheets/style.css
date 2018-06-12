@@ -4,13 +4,29 @@ body {
   height: 88vh;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  border: 5px solid blueviolet;
+  /* border: 5px solid blueviolet; */
   text-align: center;
 }
 #title {
+  font-family: Futwora Regular,sans-serif;
+  font-size: 2em;
+  letter-spacing: 4px;
+  font-weight: 100;
+  position: absolute;
+  color: gold;
   padding: 0px;
-  border: solid black
+  border: solid pink
 }
 a {
   color: #00B7FF;
+}
+video#bgvid { 
+  position: fixed;
+  top: 0;
+	left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
 }
