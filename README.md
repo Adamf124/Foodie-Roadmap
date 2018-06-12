@@ -5,6 +5,8 @@ The Foodie Road MAP!!!
 If you're someone who struggles with finding good food you've come to he right place. This app was designed with the intent for foodies like myself to find great food in major cities. 
 
 ## Getting Started
+You can find my trello here: https://trello.com/b/JHRUH6yx/wdi-project-2
+
 Clone the repo down from Github and open it in your local text editor.
 
 Git Repo: https://github.com/Adamf124/Foodie-Roadmap
