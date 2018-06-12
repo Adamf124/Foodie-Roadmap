@@ -1,0 +1,39 @@
+<h1>Edit User</h1>
+<div id="newuser">
+
+<form action="/users/{{individualUser._id}}?_method=PUT" method="POST">
+{{!-- ========= Name ============ --}}
+  <div>
+    <label for="name"> Name: </label>
+    <input type="text" name="name" value={{individualUser.name}} />
+  </div>
+{{!-- ========================== --}}
+
+{{!-- ========= Username =========== --}}
+  <div>
+    <label for="username">Username: </label>
+    <input
+    type="text" 
+    name="username" 
+    value={{individualUser.username}} />
+  </div>
+{{!-- ========================== --}}
+
+{{!-- ========= Address =========== --}}
+  <div>
+    <label for="address">Address: </label>
+    <input type="text" name="address" value={{individualUser.address}} />
+  </div>
+{{!-- ========================== --}}
+
+  {{!-- ========================== --}}
+  <div>
+    <label for="email_address">Email Address: </label>
+    <input type="text" name="email_address" value={{individualUser.email_address}} />
+  </div>
+{{!-- ========================== --}}
+  <a href="/users"><button>Cancel</button></a>
+
+  <button type="submit">Submit</button>
+</form>
+</div>
