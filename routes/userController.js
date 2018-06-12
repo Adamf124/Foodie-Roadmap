@@ -43,4 +43,19 @@ router.get('/:id/edit', (req, res) => {
       res.render('users/edit', { individualUser: doThis })
     })
 })
+// UPDATE Route
+router.put('/:id', (req, res) => {
+  User.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
+    res.redirect(`/users/${req.params.id}`)
+  })
+})
+
+// DELETE Route
+router.delete('/:id', (req, res) => {
+  User.findByIdAndRemove(req.params.id)
+    .then(() => {
+      console.log('User successfully deleted ')
+      res.redirect('/users')
+    })
+  })
 module.exports = router;

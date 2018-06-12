@@ -2,3 +2,7 @@
   <h2>{{individualUser.username}}</h2>
   <h2>{{individualUser.address}}</h2>
   <h2>{{individualUser.email_address}}</h2>
+
+<form action="/users/{{individualUser._id}}?_method=DELETE" method="POST">
+  <button type="submit">Delete User</button>
+</form>
